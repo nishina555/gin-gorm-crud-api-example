@@ -73,5 +73,5 @@ func main() {
 	r.PUT("/users/:id", updateUser)
 	r.POST("/users", createUser)
 	r.DELETE("/users/:id", deleteUser)
-	r.Run(":1323")
+	r.Run(":3000")
 }

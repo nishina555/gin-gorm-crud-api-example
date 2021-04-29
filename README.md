@@ -51,21 +51,21 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 
 ```
 ### GET
-$ curl --location --request GET 'localhost:1323/users'
+$ curl --location --request GET 'localhost:3000/users'
 
 [{"id":1,"name":"Yamada","email":"yamada@example.com"},{"id":2,"name":"Tanaka","email":"tanaka@example.com"}]
 ```
 
 ```
 ### GET
-$ curl --location --request GET 'localhost:1323/users/1'
+$ curl --location --request GET 'localhost:3000/users/1'
 
 {"id":1,"name":"Yamada","email":"yamada@example.com"}
 ```
 
 ```
 ### PUT
-$ curl --location --request PUT 'localhost:1323/users/1' \
+$ curl --location --request PUT 'localhost:3000/users/1' \
 --header 'Content-Type: application/json' \
 --data-raw '{
   "name": "Yamada",
@@ -77,7 +77,7 @@ $ curl --location --request PUT 'localhost:1323/users/1' \
 
 ```
 ### POST
-$ curl --location --request POST 'localhost:1323/users' \
+$ curl --location --request POST 'localhost:3000/users' \
 --header 'Content-Type: application/json' \
 --data-raw '{
   "name": "Suzuki",
@@ -89,5 +89,5 @@ $ curl --location --request POST 'localhost:1323/users' \
 
 ```
 ### DELETE
-$ curl --location --request DELETE 'localhost:1323/users/2'
+$ curl --location --request DELETE 'localhost:3000/users/2'
 ```
