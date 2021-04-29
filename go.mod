@@ -1,4 +1,4 @@
-module gin-gorn-crud-api-example
+module gin-gorm-crud-api-example
 
 go 1.16
 

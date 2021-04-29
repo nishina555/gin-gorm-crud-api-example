@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gin-gorn-crud-api-example/database"
+	"gin-gorm-crud-api-example/database"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
